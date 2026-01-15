@@ -8,7 +8,7 @@
      user: 
       name: "testt{{ '%03d' | format (item) }}"
       password: "{{ 'password' | password_hash('sha512') }}"
-      home: "/home/test{{ '%03d' | format (item)"
+      home: "/home/test{{ '%03d' | format (item) }}"
      loop: "{{ range(1, 11) }}"
      async: 60
      poll: 0
